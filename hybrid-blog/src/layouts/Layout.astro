@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = '日々の思いや発見を綴っています' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <header class="bg-slate-800 text-white shadow-lg">
+      <div class="container mx-auto px-4 py-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-3xl font-bold">🎬 一期一会のウラオモテ</h1>
+            <p class="text-slate-300 mt-2">映画の深層と、ビジネスの効率化が交差する場所</p>
+          </div>
+          <nav class="hidden md:flex space-x-6">
+            <a href="/" class="hover:text-slate-300 transition">ホーム</a>
+            <a href="/articles" class="hover:text-slate-300 transition">記事一覧</a>
+            <a href="/profile" class="hover:text-slate-300 transition">プロフィール</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="bg-slate-800 text-white mt-16">
+      <div class="container mx-auto px-4 py-8 text-center">
+        <p>&copy; 2024 一期一会のウラオモテ</p>
+      </div>
+    </footer>
+  </body>
+</html>

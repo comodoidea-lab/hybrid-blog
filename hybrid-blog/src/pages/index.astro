@@ -1,0 +1,137 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Sidebar from '../components/Sidebar.astro';
+---
+
+<Layout title="ホーム - 一期一会のウラオモテ">
+  <div class="container mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- メインコンテンツエリア -->
+      <div class="lg:col-span-2">
+        <div class="mb-8">
+          <h2 class="text-4xl font-bold mb-4">ようこそ、一期一会のウラオモテへ</h2>
+          <p class="text-gray-600 text-lg">日々の思いや発見を綴っています</p>
+        </div>
+
+        <!-- 記事グリッド -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- サンプル記事カード1 -->
+          <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+            <img 
+              src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&h=250&fit=crop" 
+              alt="記事のサムネイル" 
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center text-sm text-gray-500 mb-2">
+                <span>2026年2月2日</span>
+                <span class="mx-2">•</span>
+                <span>映画考察</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3 hover:text-blue-600 transition">
+                <a href="/articles/sliding-doors">運命を断ち切る1秒の残酷さと希望──映画『スライディング・ドア』が描く「もしも」の哲学と9.11の奇跡</a>
+              </h3>
+              <p class="text-gray-700 text-sm mb-4">
+                もし、あの時1秒早くドアを通り抜けていたら？誰もが一度は空想する「たられば」を、鮮烈な映像トリックと脚本の妙で描き切った90年代の傑作『スライディング・ドア』。
+              </p>
+              <a href="/articles/sliding-doors" class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                続きを読む →
+              </a>
+            </div>
+          </article>
+
+          <!-- サンプル記事カード2 -->
+          <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+            <img 
+              src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=250&fit=crop" 
+              alt="記事のサムネイル" 
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center text-sm text-gray-500 mb-2">
+                <span>2026年1月28日</span>
+                <span class="mx-2">•</span>
+                <span>ビジネス/せどり</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3 hover:text-blue-600 transition">
+                <a href="#">効率化ツールで変わる物販ビジネスの未来</a>
+              </h3>
+              <p class="text-gray-700 text-sm mb-4">
+                ビジネスの現場で使える実践的な効率化ツールの開発と活用方法について解説します。
+              </p>
+              <a href="#" class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                続きを読む →
+              </a>
+            </div>
+          </article>
+
+          <!-- サンプル記事カード3 -->
+          <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+            <img 
+              src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=250&fit=crop" 
+              alt="記事のサムネイル" 
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center text-sm text-gray-500 mb-2">
+                <span>2026年1月25日</span>
+                <span class="mx-2">•</span>
+                <span>ツール開発</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3 hover:text-blue-600 transition">
+                <a href="#">自作ツールで業務を10倍効率化する方法</a>
+              </h3>
+              <p class="text-gray-700 text-sm mb-4">
+                日常業務の課題を解決するための自作ツール開発のノウハウを共有します。
+              </p>
+              <a href="#" class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                続きを読む →
+              </a>
+            </div>
+          </article>
+
+          <!-- サンプル記事カード4 -->
+          <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+            <img 
+              src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=250&fit=crop" 
+              alt="記事のサムネイル" 
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center text-sm text-gray-500 mb-2">
+                <span>2026年1月22日</span>
+                <span class="mx-2">•</span>
+                <span>映画考察</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3 hover:text-blue-600 transition">
+                <a href="#">映画に隠された深層心理を読み解く</a>
+              </h3>
+              <p class="text-gray-700 text-sm mb-4">
+                表面的なストーリーの裏に隠された監督の意図や心理描写を深掘りします。
+              </p>
+              <a href="#" class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                続きを読む →
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- ページネーション -->
+        <div class="flex justify-center items-center space-x-4 mt-8">
+          <button class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100 transition">
+            前のページ
+          </button>
+          <span class="text-gray-600">1 / 5</span>
+          <button class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100 transition">
+            次のページ
+          </button>
+        </div>
+      </div>
+
+      <!-- サイドバー -->
+      <div class="lg:col-span-1">
+        <Sidebar />
+      </div>
+    </div>
+  </div>
+</Layout>

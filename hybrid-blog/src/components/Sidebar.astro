@@ -1,0 +1,91 @@
+---
+// サイドバーコンポーネント
+---
+
+<aside class="space-y-8">
+  <!-- プロフィールセクション -->
+  <div class="bg-white rounded-lg shadow-md p-6">
+    <h3 class="text-xl font-bold mb-4 flex items-center">
+      <span class="mr-2">📝</span>プロフィール画像
+    </h3>
+    <div class="mb-4">
+      <p class="font-bold text-lg mb-2">ブログ管理人：タダノトモヤ</p>
+      <p class="text-gray-700 text-sm leading-relaxed">
+        映画マニア兼ビジネスツール開発者。映画の深層心理と、実務で使える効率化ツールの開発を通じて、日々の発見を発信しています。
+      </p>
+    </div>
+  </div>
+
+  <!-- 人気の記事セクション -->
+  <div class="bg-white rounded-lg shadow-md p-6">
+    <h3 class="text-xl font-bold mb-4 flex items-center">
+      <span class="mr-2">🔥</span>人気の記事
+    </h3>
+    <p class="text-sm text-gray-600 mb-4">累計視聴回数2.6万回を誇るYouTube動画と連動した人気記事TOP5</p>
+    <ol class="space-y-2 text-sm">
+      <li class="flex justify-between">
+        <span>1. 人気記事 1</span>
+        <span class="text-gray-500">1000 views</span>
+      </li>
+      <li class="flex justify-between">
+        <span>2. 人気記事 2</span>
+        <span class="text-gray-500">900 views</span>
+      </li>
+      <li class="flex justify-between">
+        <span>3. 人気記事 3</span>
+        <span class="text-gray-500">800 views</span>
+      </li>
+      <li class="flex justify-between">
+        <span>4. 人気記事 4</span>
+        <span class="text-gray-500">700 views</span>
+      </li>
+      <li class="flex justify-between">
+        <span>5. 人気記事 5</span>
+        <span class="text-gray-500">600 views</span>
+      </li>
+    </ol>
+  </div>
+
+  <!-- カテゴリーセクション -->
+  <div class="bg-white rounded-lg shadow-md p-6">
+    <h3 class="text-xl font-bold mb-4 flex items-center">
+      <span class="mr-2">📂</span>カテゴリー
+    </h3>
+    <ul class="space-y-3">
+      <li>
+        <a href="/category/movie" class="flex justify-between hover:text-blue-600 transition">
+          <span>映画考察</span>
+          <span class="text-gray-500">10</span>
+        </a>
+        <p class="text-xs text-gray-500 mt-1">映画の深層分析とネタバレ考察</p>
+      </li>
+      <li>
+        <a href="/category/business" class="flex justify-between hover:text-blue-600 transition">
+          <span>ビジネス/せどり</span>
+          <span class="text-gray-500">8</span>
+        </a>
+        <p class="text-xs text-gray-500 mt-1">効率化ツールと物販ノウハウ</p>
+      </li>
+      <li>
+        <a href="/category/tools" class="flex justify-between hover:text-blue-600 transition">
+          <span>ツール開発</span>
+          <span class="text-gray-500">7</span>
+        </a>
+        <p class="text-xs text-gray-500 mt-1">自作ツールの紹介と技術解説</p>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 検索セクション -->
+  <div class="bg-white rounded-lg shadow-md p-6">
+    <h3 class="text-xl font-bold mb-4 flex items-center">
+      <span class="mr-2">🔍</span>検索
+    </h3>
+    <p class="text-sm text-gray-600 mb-3">サイト内の記事を検索して、お探しの情報を見つけてください。</p>
+    <input 
+      type="text" 
+      placeholder="記事を検索..." 
+      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    />
+  </div>
+</aside>
